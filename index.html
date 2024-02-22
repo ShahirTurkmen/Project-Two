@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js" defer></script>
+    <link rel="icon" href="./favicon.png" type="image/x-icon">
+    <style>
+      body{
+        user-select: none;
+      }
+
+      body .app { background-color: wheat; display: none;  }
+      body .login {
+        display: flex;
+        flex-direction: column;
+        background: url('./utils/win10.png');
+        color: rgb(0, 0, 0);
+        align-items: center;
+        font-family: 'Courier New', Courier, monospace;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        position: fixed;
+        text-align: center;
+      }
+      #div1{
+        margin-top: 10px;
+      }
+      .login img{
+        border-radius: 10000%;
+        margin-bottom: 10px;
+        
+      }
+      .login input{
+        margin-bottom: 10px;
+        padding: 10px;
+        outline: 1px solid red;
+        border-radius: 10px;
+        /* position: relative; */
+        right: 15px;
+      }
+      .login h1{
+        color: wheat;
+      }
+      .login button, button{
+        border: none;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        cursor: pointer;
+        /* position: absolute; */
+        /* top: 62%; */
+        /* right: 40%; */
+        /* left: 56%; */
+        padding: 12px 10px;
+        border-radius: 10px;
+      }
+      button{
+        background-color: antiquewhite;
+      }
+    </style>
+</head>
+<body>
+  <div class="login">
+    <img src="./utils/guest.png" alt="" id="img">
+    <h1>Muhammad Shahir Turkmen</h1>
+    <input type="password" id="password">
+    <button id="submit">Submit</button>
+    <div id="div"></div>
+  </div>
+  <button id="button">Error Audio</button>
+  <button id="button1">Ding Audio</button>
+  <button id="button2">Startup Audio</button>
+  <button id="button3">Shutdown Audio</button>
+  <button id="button4">Notif Audio</button>
+  <button id="button5">Navigate Audio</button>
+  <button id="button6">Startup2 Audio</button>
+</body>
+</html>
