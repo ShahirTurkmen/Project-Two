@@ -27,7 +27,7 @@ playButtonAudio();
 otherThings();
 function otherThings() {
     submit.addEventListener('click', () => {
-        if (inputPassword.value === '') {
+        if (inputPassword.value === 'Muhammad-Shahir') {
             div.innerHTML = `<h1 style='color:green;' id='div1'>Ho!!! Ho!!! Correct Password😯😯🔥😺😺🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳!!!</h1>`;
             login.append(div);
             setTimeout(() => {
